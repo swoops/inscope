@@ -1,0 +1,7 @@
+{
+  "name": "inscope",
+  "description": "Get a hosts IP address and check it against a scope file",
+  "path": "REPLACE_ME_PLEASE",
+  "type": "stdio",
+  "allowed_extensions": [ "inscope@example.com" ]
+}

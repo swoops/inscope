@@ -1,0 +1,33 @@
+{
+
+  "description": "Check if a host is in scope from it's IP address.",
+  "manifest_version": 2,
+  "name": "InScope",
+  "version": "1.0",
+  "applications": {
+    "gecko": {
+      "id": "inscope@example.com",
+      "strict_min_version": "52.0"
+    }
+  },
+
+  "icons": {
+    "48": "icons/scope.svg",
+    "96": "icons/scope96.svg"
+  },
+
+  "page_action": {
+    "default_icon": "icons/black.svg",
+    "browser_style": true
+  },
+
+  "background": {
+    "scripts": ["background.js"]
+  },
+
+  "permissions": [
+  	"nativeMessaging",
+    "activeTab",
+    "tabs"
+  ]
+}
