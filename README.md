@@ -27,7 +27,7 @@ Additionally, create a `/tmp/ff_scope` file containing a new line separate list
 of IP addresses. When the python script resolves an IP, it will check if that
 IP is in the provided list. If so it will make the inscope icon turn green
 (![scope icon](./src/extention/icons/green.svg)). Otherwise it will be red
-(![scope icon](./src/extention/icons/green.svg)). If you update the
+(![scope icon](./src/extention/icons/red.svg)). If you update the
 `/tmp/ff_scope` file, then click the inscope icon to tell it to re parse the
 file.
 
@@ -42,6 +42,9 @@ welcome.
 3. Move `src/app/inscope.json` to the appropriate [location](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/Native_manifests#Manifest_location)
 4. Replace the `path` variable in the manifest file (`src/app/inscope.json`)
 with the full path to `src/app/inscope.py`
+
+If you don't see the inscope icon appear in the URL bar when visiting a website, 
+check the console for errors.
 
 I wrote the `install.sh` to do the Native application install, on Linux, the
 way I like it. This may not be the way you like it though.
