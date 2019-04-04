@@ -1,4 +1,5 @@
-# ![scope icon](./src/extension/icons/scope.svg)inscope
+# ![scope icon](./src/extention/icons/scope.svg)inscope
+
 Firefox Extension using Native Messaging to get a website's IP address and check
 it against a scope file.
 
@@ -32,10 +33,10 @@ mouseover of the inscope icon.
 
 If you create a `/tmp/ff_scope` file containing a new line separated list of IP
 addresses. When the Python script resolves an IP, it will check if that IP is
-in the provided list. If so it will make the inscope icon turn green (![scope
-icon](./src/extension/icons/green.svg)). Otherwise it will be red (![scope
-icon](./src/extension/icons/red.svg)). If the `/tmp/ff_scope` file is updated,
-clicking the inscope icon will tell it to re-parse the file.
+in the provided list. If so it will make the inscope icon turn green 
+![scope icon](./src/extention/icons/green.svg). Otherwise it will be red 
+![scope icon](./src/extention/icons/red.svg). If the `/tmp/ff_scope` file is
+updated, clicking the inscope icon will tell it to re-parse the file.
 
 
 ## Usability
